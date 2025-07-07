@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+    <title>Portofolio</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center transition duration-300 ease-in-out">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4 text-primary font-bold text-lg block py-6">
+                    Kasanindit
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white 
+                    shadow-xl rounded-lg max-w-[250px] w-full right-4 top-full z-20  
+                    lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                        <ul class="block lg:flex">
+                            <li class="group ">
+                                <a href="#home" class="py-2 mx-8 flex group-hover:text-primary">Home</a>
+                            </li>
+
+                            <li class="group">
+                                <a href="#expertise" class="py-2 mx-8 flex group-hover:text-primary">Expertise</a>
+                            </li>
+
+                            <li class="group">
+                                <a href="#aboutme" class="py-2 mx-8 flex group-hover:text-primary">About Me</a>
+                            </li>
+
+                            <li class="group">
+                                <a href="#projects" class="py-2 mx-8 flex group-hover:text-primary">Projects</a>
+                            </li>
+
+                            <li class="group">
+                                <a href="#contact" class="py-2 mx-8 flex group-hover:text-primary">Contact Me</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- section start -->
+    <section id="home" class="pt-36 bg-shade">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <h1 class="text-base font-semibold md:text-xl lg:text-1.5xl">Hello, All! Introducing </h1>
+                    <h2 class="text-2xl font-bold text-primary md:text-3xl lg:text-4xl">Kasamira Anindita</h2>
+                    <h3 class="font-semibold text-slate-600 md:text-xl lg:text-1.5xl">A Student and Software Development
+                        Enthusiast</h3>
+                    <p class="text-base mt-8 mb-16 text-slate-400 leading-relaxed lg:text-24">Still figuring things out,
+                        but someday I might change the game.</p>
+
+                    <a href="#contact" class="text-base text-white bg-primary hover:shadow-2xl 
+                    hover:bg-sky-500 px-6 py-3 rounded-4xl transition duration-30 ease-in-out">Get in touch</a>
+                </div>
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="relative mt-10 lg:mt-10 lg:right-0">
+                        <img src="src/img/anin-reversed.png" alt="Kasamira Anindita Qairia"
+                            class="max-w-full mx-auto w-120 h-auto relative z-5">
+                        <span class="absolute -bottom-0 z-10 left-1/2 -translate-x-1/2">
+                            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#0369A1"
+                                    d="M45.4,-65.4C59.7,-61.5,72.7,-50.3,77,-36.4C81.3,-22.6,77,-6.1,70.7,7.4C64.4,20.9,56.3,31.3,47.4,40.5C38.5,49.7,28.9,57.8,17.5,62.3C6.1,66.8,-7,67.8,-21.2,66.4C-35.5,64.9,-50.7,61,-63.7,51.9C-76.7,42.8,-87.4,28.4,-84.1,15.4C-80.8,2.4,-63.5,-9.4,-54.8,-23.6C-46.1,-37.9,-46,-54.7,-38.3,-61.6C-30.6,-68.5,-15.3,-65.6,0.1,-65.8C15.6,-66,31.1,-69.3,45.4,-65.4Z"
+                                    transform="translate(100 100) scale(1.5)" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- section end -->
+
+    <!-- my expertise start -->
+    <section id="expertise" class="pt-18 pb-8">
+        <div class="container mt-8 mb-16">
+            <div class="flex flex-wrap">
+                <div class="w-full">
+                    <h1 class="mt-8 font-bold text-2xl">My Expertise</h1>
+                    <h2 class="text-slate-400 text-left">
+                        These are some of the results of my studies and experiments. Some are from college assignments,
+                        bootcamps, and even just for fun.
+                        <span class="block">Mostly about web and mobile - but who knows, it could grow 💡</span>
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4">
+                    <!-- card 1 -->
+                    <div class="bg-shade rounded-xl shadow-xl flex flex-col justify-between px-6 py-8">
+                        <div>
+                            <img src="src/img/mobile.png" alt="mobile" class="mx-auto w-12 mb-4" />
+                            <h1 class="text-base font-bold mb-5 text-center">Mobile App Development</h1>
+                            <p class="text-slate-500 text-center mb-4">
+                                Building Android apps mostly using Kotlin and starting to use Flutter.
+                                I like to build apps that have an attractive look and useful functionality.
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-center gap-3 mt-2">
+                            <!-- Kotlin -->
+                            <div
+                                class="w-9 h-9 rounded-full flex items-center justify-center border border-slate-300 hover:bg-primary hover:border-primary hover:text-white">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>Kotlin</title>
+                                    <path d="M24 24H0V0h24L12 12Z" />
+                                </svg>
+                            </div>
+                            <!-- Flutter -->
+                            <div
+                                class="w-9 h-9 rounded-full flex items-center justify-center border border-slate-300 hover:bg-primary hover:border-primary hover:text-white">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>Flutter</title>
+                                    <path
+                                        d="M14.314 0L2.3 12 6 15.7 21.684.013h-7.357zm.014 11.072L7.857 17.53l6.47 6.47H21.7l-6.46-6.468 6.46-6.46h-7.37z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 2 -->
+                    <div class="bg-shade rounded-xl shadow-xl  flex flex-col justify-between px-6 py-8">
+                        <div>
+                            <img src="src/img/frontend.png" alt="frontend" class="mx-auto w-12 mb-4" />
+                            <h1 class="text-base font-bold mb-5 text-center">Front-End Development</h1>
+                            <p class="text-slate-500 text-center mb-4">
+                                Now I'm focusing on learning how to make a web interface using HTML, CSS, and Tailwind
+                                CSS.
+                                Really interested in clean, modern, and responsive UI.
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-center gap-3 mt-2">
+                            <div
+                                class="w-9 h-9 rounded-full flex items-center justify-center border border-slate-300 hover:bg-primary hover:border-primary hover:text-white">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>Tailwind CSS</title>
+                                    <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624
+                    C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624
+                    C16.337,6.182,14.976,4.8,12.001,4.8z
+                    M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624
+                    c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624
+                    C10.337,13.382,8.976,12,6.001,12z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- card 3 -->
+                    <div class="bg-shade rounded-xl shadow-xl flex flex-col justify-between px-6 py-8">
+                        <div>
+                            <img src="src/img/api.png" alt="api" class="mx-auto w-12 mb-4" />
+                            <h1 class="text-base font-bold mb-5 text-center">API Integration</h1>
+                            <p class="text-slate-500 text-center mb-4">
+                                Familiar with creating simple REST APIs using Flask and connecting them to
+                                frontend/mobile applications.
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-center gap-3 mt-2">
+                            <div
+                                class="w-9 h-9 rounded-full flex items-center justify-center border border-slate-300 hover:bg-primary hover:border-primary hover:text-white">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>Flask</title>
+                                    <path
+                                        d="M10.773 2.878c-.013 1.434.322 4.624.445 5.734l-8.558 3.83c-.56-.959-.98-2.304-1.237-3.38l-.06.027c-.205.09-.406.053-.494-.088l-.011-.018-.82-1.506c-.058-.105-.05-.252.024-.392a.78.78 0 0 1 .358-.331l9.824-4.207c.146-.064.299-.063.4.004.106.062.127.128.13.327Zm.68 7c.523 1.97.675 2.412.832 2.818l-7.263 3.7a19.35 19.35 0 0 1-1.81-2.83l8.24-3.689Zm12.432 8.786h.003c.283.402-.047.657-.153.698l-.947.37c.037.125.035.319-.217.414l-.736.287c-.229.09-.398-.059-.42-.2l-.025-.125c-4.427 1.784-7.94 1.685-10.696.647-1.981-.745-3.576-1.983-4.846-3.379l6.948-3.54c.721 1.431 1.586 2.454 2.509 3.178 2.086 1.638 4.415 1.712 5.793 1.563l-.047-.233c-.015-.077.007-.135.086-.165l.734-.288a.302.302 0 0 1 .342.086l.748-.288a.306.306 0 0 1 .341.086l.583.89Z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- my expertise end -->
+
+
+    <!-- about me start -->
+    <section id="aboutme" class="pt-8 pb-8 bg-shade">
+        <div class="container mt-8 mb-16">
+            <div class="flex flex-wrap">
+                <img src="src/img/anin.png" alt="Kasamira Anindita Qairia"
+                    class="max-w-full mx-auto mt-2 w-120 h-auto relative z-10">
+                <div class="w-full self-center px-4 lg:w-1/2 mt-4">
+                    <h1 class="text-base font-semibold md:text-xl lg:text-1.5xl">About Me</h1>
+                    <h2 class="text-2xl font-bold text-primary md:text-2.5xl lg:text-3xl">Kasamira Anindita Qairia</h2>
+                    <p class="text-base mb-4 text-slate-400 leading-relaxed lg:text-24">Hi! I'm Kasamira, an Informatics
+                        Engineering student
+                        at Politeknik Negeri Jakarta with a strong interest in mobile and web development. Currently
+                        exploring Android with
+                        Kotlin and starting to dive into Flutter. I love developing clean and useful applications.
+                        Always
+                        learning—because
+                        technology never stops evolving!
+                        <br><br>
+                        I'm an introvert who takes a bit of time to warm up, but once I'm comfortable, I can be super
+                        loud
+                        and
+                        over-the-top—in the best way! I love learning new things, tend to be spontaneous and flexible,
+                        and
+                        often rely on
+                        intuition and gut feelings to make decisions (yes, INFP things). I believe that staying curious
+                        and
+                        true to yourself
+                        is the best way to grow.
+                    </p>
+
+                    <div class="flex items-center mt-8">
+                        <a href="https://github.com/kasanindit" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center 
+                        items-center border border-slate-300 hover:bg-primary hover:border-primary hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>GitHub</title>
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                            </svg>
+                        </a>
+
+                        <a href="https://wa.me/6285885434250/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center 
+                        items-center border border-slate-300 hover:bg-primary hover:border-primary hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>WhatsApp</title>
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                            </svg>
+                        </a>
+
+                        <a href="https://www.instagram.com/kasanindit/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center 
+                        items-center border border-slate-300 hover:bg-primary hover:border-primary hover:text-white">
+                            <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <title>Instagram</title>
+                                <path
+                                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about me end -->
+
+    <!-- my project start -->
+    <section id="projects" class="pt-24 pb-16 ">
+        <div class="container ">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 text-center">
+                    <h1 class="mt-8 font-bold text-2xl ">My Projects</h1>
+                    <p class="text-base text-slate-500 mt-2">Some of the works I created to explore and grow in the
+                        world of
+                        tech.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4">
+
+                        <!-- card 1 -->
+                        <div class="rounded-xl shadow-xl overflow-hidden flex flex-col justify-between min-h-[500px]">
+                            <img src="src/img/staysenseapp.png" alt="expertise 1" class="mx-auto w-full mb-4">
+                            <h2 class="text base font-bold mb-4 text-center">StaySense Android App</h2>
+                            <p class="text-base text-slate-800 mr-4 ml-4 text-center mb-5">
+                                StaySense is an Android App uses machine learning-based predictive solution to predict
+                                potential customer
+                                churn in telecommunication companies using XGBoost Algorithm.
+                            </p>
+
+                            <div class="flex items-center justify-center gap-3 px-6 py-4">
+                                <a href="https://github.com/nauramufidh/StaySense" target="_blank"
+                                    class="w-9 h-9 mr-3 rounded-full flex items-center justify-center 
+                                            border border-slate-300 hover:bg-primary hover:border-primary hover:text-white">
+                                    <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <title>GitHub</title>
+                                        <path
+                                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- card 2 -->
+                        <div class="rounded-xl shadow-xl overflow-hidden flex flex-col justify-between min-h-[500px]">
+                            <div>
+                                <img src="src/img/rasanusaapp.png" alt="expertise 1" class="mx-auto w-full mb-4">
+                                <h2 class="text base font-bold mb-4 text-center">RasaNusa</h2>
+                                <p class="text-slate-800 mr-4 ml-4 text-center mb-5">
+                                    RasaNusa is an Android-based application to recognize food using image scanning and
+                                    machine learning technology. The app is designed to raise awareness of local
+                                    culinary
+                                    heritage, helping users find out more information about the food they encounter.
+                                </p>
+                            </div>
+
+                            <div class="flex items-center justify-center gap-3 px-6 py-4">
+                                <a href="https://github.com/rizkifrtma11/Capstone-Project-Bangkit-2024-batch-2/tree/development"
+                                    target="_blank"
+                                    class="w-9 h-9 mr-3 rounded-full flex items-center justify-center 
+                                        border border-slate-300 hover:bg-primary hover:border-primary hover:text-white">
+                                    <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <title>GitHub</title>
+                                        <path
+                                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- card 3 -->
+                        <div class="rounded-xl shadow-xl overflow-hidden flex flex-col justify-between min-h-[500px]">
+                            <div>
+                                <img src="src/img/dicoding_story_app.png" alt="expertise 3" class="mx-auto w-full mb-4">
+                                <h2 class="text base font-bold mb-4 text-center">Project Dicoding Story App</h2>
+                                <p class="text-slate-800 mr-4 ml-4 text-center mb-5">
+                                    Dicoding Story App is a mobile application that allows users to view a list of
+                                    stories shared by others as well as their own.
+                                    Users can create and upload stories by either selecting images from the gallery or
+                                    capturing photos directly using CameraX.
+                                    The app also includes a location feature to display the user's location when
+                                    submitting a story.
+                                </p>
+                            </div>
+
+                            <div class="flex items-center justify-center gap-3 px-6 py-4">
+                                <a href="https://github.com/kasanindit/StoryApp-Submission2" target="_blank" class="w-9 h-9 mr-3 rounded-full flex items-center justify-center 
+                                    border border-slate-300 hover:bg-primary hover:border-primary hover:text-white">
+                                    <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <title>GitHub</title>
+                                        <path
+                                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- card 4 -->
+                        <div class="rounded-xl shadow-xl overflow-hidden flex flex-col justify-between min-h-[500px]">
+                            <div>
+                                <img src="src/img/dicoding_event_app.png" alt="expertise 4" class="mx-auto w-full mb-4">
+                                <h2 class="text base font-bold mb-4 text-center">Project Dicoding Event App</h2>
+                                <p class="text-slate-800 mr-4 ml-4 text-center mb-5">
+                                    Dicoding Event App is a mobile application that displays a list of events from
+                                    Dicoding.
+                                    It features three main sections: upcoming events, favorite events, and past events.
+                                    The app fetches data from the official Dicoding API, allowing users to explore and
+                                    manage events efficiently.
+                                </p>
+                            </div>
+
+                            <div class="flex items-center justify-center gap-3 px-6 py-4">
+                                <a href="https://github.com/kasanindit/Aplikasi-Event-Dicoding-2" target="_blank" class="w-9 h-9 mr-3 rounded-full flex items-center justify-center 
+                            border border-slate-300 hover:bg-primary hover:border-primary hover:text-white">
+                                    <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <title>GitHub</title>
+                                        <path
+                                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- card 5 -->
+                        <div class="rounded-xl shadow-xl overflow-hidden flex flex-col justify-between min-h-[500px]">
+                            <div>
+                                <img src="src/img/movies_app.png" alt="expertise 1" class="mx-auto w-full mb-4">
+                                <h2 class="text base font-bold mb-4 text-center">Project Movies App</h2>
+                                <p class="text-slate-800 mr-4 ml-4 text-center mb-5">
+                                    Movies is an a list of movies mobile application that I developed using Android
+                                    Studio and
+                                    Kotlin
+                                    as part of my final exam project for the Mobile Programming course in my 4th
+                                    semester.
+                                </p>
+                            </div>
+
+                            <div class="flex items-center justify-center gap-3 px-6 py-4">
+                                <a href="https://github.com/KasamirAnindita/2207411045_Kasamira-Anindita-Qairia_UASMobileProgramming_MovieApp"
+                                    target="_blank" class="w-9 h-9 mr-3 rounded-full flex items-center justify-center 
+                    border border-slate-300 hover:bg-primary hover:border-primary hover:text-white">
+                                    <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <title>GitHub</title>
+                                        <path
+                                            d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-16">
+                        More here
+                        <a href="https://github.com/kasanindit" target="_blank"
+                            class="underline hover:text-primary">github.com/kasanindit</span></a>
+                    </p>
+                </div>
+            </div>
+    </section>
+
+    <!-- my project end -->
+
+    <!-- contact start -->
+    <section id="contact" class="pt-18 pb-16">
+        <div class="container mt-8 mb-16">
+            <div class="flex flex-wrap">
+                <div class="w-full">
+                    <h1 class="text-base text-center font-semibold text-primary">Get In Touch</h1>
+                    <h2 class="text-3xl text-center font-bold mt-2">
+                        Contact Me
+                    </h2>
+                </div>
+
+                <div class="md:px-52 mt-4 w-full transition ease-in-out">
+                    <div class="bg-blue-950 rounded-xl shadow-xl flex flex-col justify-between px-6 py-8">
+                        <div>
+                            <h3 class="text-lg font-bold mb-5 text-center text-white">Feel free to reach me out via
+                                email or social media below!</h1>
+                                <!-- <h4 class="text-slate-200 text-center mb-3">
+                                Email to:
+                            </p> -->
+                        </div>
+
+                        <div class="flex items-center justify-center gap-3">
+                            <!-- Email -->
+                            <a href="mailto:kasamiraaninditaqairia@gmail.com" target="_blank"
+                                class="w-9 h-9 rounded-full flex items-center justify-center border hover:bg-primary hover:border-primary hover:text-white border-slate-300 bg-white text-black">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>Gmail</title>
+                                    <path
+                                        d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+                                </svg>
+                            </a>
+
+                            <!-- LinekdIn -->
+                            <a href="https://www.linkedin.com/in/kasamira-anindita-qairia-9aa88524b/" target="_blank"
+                                class="w-9 h-9 rounded-full flex items-center justify-center border hover:bg-primary hover:border-primary hover:text-white border-slate-300 bg-white text-black">
+                                <ion-icon name="logo-linkedin" class="text-2xl"></ion-icon>
+                            </a>
+
+                            <!-- whatsapp -->
+                            <a href="https://wa.me/6285885434250/" target="_blank"
+                                class="w-9 h-9 rounded-full flex items-center justify-center border hover:bg-primary hover:border-primary hover:text-white border-slate-300 bg-white text-black">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>WhatsApp</title>
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                                </svg>
+                            </a>
+
+                            <!-- instagram -->
+                            <a href="https://www.instagram.com/kasanindit/" target="_blank"
+                                class="w-9 h-9 rounded-full flex items-center justify-center border hover:bg-primary hover:border-primary hover:text-white border-slate-300 bg-white text-black">
+                                <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <title>Instagram</title>
+                                    <path
+                                        d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <!-- contact end -->
+
+    <!-- footer start -->
+    <footer class="bg-gray-800 pt-18 pb-12">
+        <div class="container">
+            <div class="flex flex-col lg:flex-row justify-between flex-wrap px-4">
+                <h2 class="text-white font-bold text-2xl mb-6 lg:mb-0">Kasanindit</h2>
+
+                <ul class="flex flex-col lg:flex-row lg:items-center text-white gap-4 ">
+                    <li class="group ">
+                        <a href="#home" class="py-2 lg:mx-8 flex group-hover:text-sky-400 underline">Home</a>
+                    </li>
+
+                    <li class="group">
+                        <a href="#expertise" class="py-2 lg:mx-8 flex group-hover:text-sky-400 underline">Expertise</a>
+                    </li>
+
+                    <li class="group">
+                        <a href="#aboutme" class="py-2 lg:mx-8 flex group-hover:text-sky-400 underline">About Me</a>
+                    </li>
+
+                    <li class="group">
+                        <a href="#projects" class="py-2 lg:mx-8 flex group-hover:text-sky-400 underline">Projects</a>
+                    </li>
+
+                    <li class="group">
+                        <a href="#contact" class="py-2 lg:mx-8 flex group-hover:text-sky-400 underline">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w-full mt-10 border-t border-gray-600 mb-8">
+            </div>
+
+            <p class="text-xs md:text-base text-center text-white transition ease-in-out">Made by 
+                <a href="https://www.instagram.com/kasanindit/" target="_blank" class="font-bold text-sky-400">Kasamira Anindita</a> with 
+                <a href="https://tailwindcss.com" target="_blank" class="text-sky-500 font-bold">Tailwind CSS</a> </p>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <script src="dist/js/script.js"></script>
+
+</body>
+
+</html>
