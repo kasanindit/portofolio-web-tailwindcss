@@ -13,7 +13,13 @@ export default {
                 100: "#10b981",
             
             },
-            shade: "#F5FCFF"
+            red: "#ff0000",
+            blue: "#2563eb",
+            orange: "#ff8800",
+            dark: "#111827",
+            light: '#F3F4F6',
+            shade: "#F2F2F2",
+            // bg_grey: "#F2F2F2",
         },
         screens:{
           '2xl': '1320px'
