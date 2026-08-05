@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -83,111 +83,498 @@
                     class="px-8 py-3 bg-white text-primary border border-primary rounded-lg font-medium hover:bg-gray-50 transition-colors">
                     Reach Me Out
                 </a>
+                <!-- <a href="#contact" target="_blank"
+                    class="inline-flex items-center justify-center rounded-xl border border-primary px-5 py-3 font-semibold text-primary transition duration-300 hover:-translate-y-0.5 hover:bg-primary hover:text-white">
+                    Reach Me Out
+                </a> -->
             </div>
         </div>
     </section>
 
 
-    <section id="about" class="py-16 md:py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 md:mb-16 fade-in-section">
-                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">About Me</h2>
-                <div class="w-16 h-1 bg-primary mx-auto rounded"></div>
+    <section id="about" class="relative overflow-hidden bg-white py-16 md:py-24">
+        <div class="pointer-events-none absolute -right-24 top-20 h-72 w-72 rounded-full bg-primary/5 blur-3xl">
+        </div>
+
+        <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 text-center fade-in-section md:mb-16">
+                <!-- <span class="mb-3 inline-block text-sm font-semibold uppercase tracking-[0.2em] text-primary">
+                    Get to Know Me
+                </span> -->
+
+                <h2 class="mb-4 text-3xl font-bold text-dark md:text-4xl">
+                    About Me
+                </h2>
+
+                <div class="mx-auto h-1 w-16 rounded-full bg-primary"></div>
             </div>
-            <div class="flex flex-col md:flex-row items-center justify-between fade-in-section">
-                <div class="md:w-1/2 mb-10 md:mb-0 flex justify-center">
-                    <div
-                        class="w-48 h-48 sm:w-64 sm:h-64 bg-gray-200 rounded-full border-4 border-primary shadow-xl overflow-hidden flex items-center justify-center">
-                        <img src="src/img/me33.png" alt="Kasamira Anindita Qairia"
-                            class="max-w-full mx-auto mt-2 w-120 h-auto relative z-10">
+
+            <div class="grid grid-cols-1 items-start gap-10 fade-in-section lg:grid-cols-12 lg:gap-14">
+                <div class="lg:col-span-4">
+                    <div class="mx-auto max-w-sm">
+                        <div class="relative">
+                            <div class="absolute -inset-3 rotate-3 rounded-[2rem] bg-primary/10">
+                            </div>
+
+                            <div
+                                class="relative aspect-square overflow-hidden rounded-[2rem] border-4 border-white bg-gray-100 shadow-xl">
+                                <img src="src/img/me33.png" alt="Kasamira Anindita Qairia"
+                                    class="h-full w-full object-cover object-top">
+                            </div>
+                        </div>
+
+                        <div
+                            class="relative mx-auto -mt-7 w-[85%] rounded-2xl border border-gray-100 bg-white px-5 py-4 text-center shadow-lg">
+                            <h3 class="font-bold text-dark">
+                                Kasamira Anindita Qairia
+                            </h3>
+
+                            <p class="mt-1 text-sm font-medium text-primary">
+                                Mobile & Software Developer
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="md:w-1/2 md:pl-10 text-center md:text-left">
-                    <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
-                        I am a detail-oriented mobile developer with a passionate about discovering how technology can
-                        solve real-world problems. I enjoy turning ideas into applications that solve real-world
-                        problems and create meaningful experiences for users.
-                    </p>
-                    <p class="text-base sm:text-lg text-gray-600 leading-relaxed mb-6">
-                        In my free time, you can find me at a coffee shop while chilling with a latte and listening to
-                        music or maybe while playing drum and badminton.<br><br> I'm always eager to learn embrace feedback, and
-                        improve my skills.
-                    </p>
-                    <a href="src/pdf/Kasamira Anindita Qairia_CV ATS_Mobile Developer - Copy.pdf"
-                        target="_blank"
-                        class="inline-flex items-center justify-center text-primary font-semibold hover:text-secondary transition-colors nav-link lg:hover:text-primary ">
-                        View and Download Resume
-                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-                        </svg>
-                    </a>
+
+                <div class="space-y-6 lg:col-span-8">
+                    <div class="rounded-3xl border border-gray-100 bg-gray-50/70 p-6 shadow-sm sm:p-8">
+                        <span
+                            class="mb-4 inline-flex rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-primary">
+                            Hello, I'm Anin!
+                        </span>
+
+                        <p class="text-base leading-relaxed text-gray-600 sm:text-lg">
+                            I am a detail-oriented mobile developer who is passionate
+                            about exploring how technology can solve real-world problems.
+                            I enjoy transforming ideas into reliable, user-centered
+                            applications that create meaningful experiences.
+                        </p>
+
+                        <p class="mt-4 text-base leading-relaxed text-gray-600 sm:text-lg">
+                            In my free time, you can usually find me enjoying a latte
+                            at a coffee shop, listening to music, playing the drums,
+                            or playing badminton. I am always eager to learn, embrace
+                            feedback, and continuously improve my skills.
+                        </p>
+
+                        <div class="mt-7 flex flex-col gap-3 sm:flex-row">
+                            <a href="src/pdf/Kasamira Anindita Qairia_CV ATS_Mobile Developer - Copy.pdf"
+                                target="_blank"
+                                class="inline-flex items-center justify-center rounded-xl border border-primary px-5 py-3 font-semibold text-primary transition duration-300 hover:-translate-y-0.5 hover:bg-primary hover:text-white">
+                                View Resume
+
+                                <svg class="ml-2 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 3h7m0 0v7m0-7L10 14M5 5h5M5 5v14h14v-5" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+
+        <!-- Detail cards -->
+        <div class="mx-auto max-w-7xl grid grid-cols-1 gap-6 md:grid-cols-2 sm:px-6 mt-12">
+            <div
+                class="rounded-3xl border border-gray-100 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-7">
+                <div class="mb-6 flex items-center gap-3">
+                    <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5.121 17.804A9 9 0 1118.88 17.804M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold text-dark">
+                            Personal Details
+                        </h3>
+                        <p class="text-sm text-gray-500">
+                            A little more about me
+                        </p>
+                    </div>
+                </div>
+
+                <dl class="grid grid-cols-1 gap-3 sm:grid-cols-2">
+                    <div class="rounded-2xl bg-gray-50 p-4">
+                        <dt class="text-xs font-semibold uppercase tracking-wider text-gray-400">
+                            Nickname
+                        </dt>
+                        <dd class="mt-1 font-semibold text-gray-700">
+                            Anin, Mirem, Mir
+                        </dd>
+                    </div>
+
+                    <div class="rounded-2xl bg-gray-50 p-4">
+                        <dt class="text-xs font-semibold uppercase tracking-wider text-gray-400">
+                            Birthday
+                        </dt>
+                        <dd class="mt-1 font-semibold text-gray-700">
+                            27 June 2004
+                        </dd>
+                    </div>
+
+                    <div class="rounded-2xl bg-gray-50 p-4">
+                        <dt class="text-xs font-semibold uppercase tracking-wider text-gray-400">
+                            Zodiac Sign
+                        </dt>
+                        <dd class="mt-1 font-semibold text-gray-700">
+                            Cancer
+                        </dd>
+                    </div>
+
+                    <div class="rounded-2xl bg-gray-50 p-4">
+                        <dt class="text-xs font-semibold uppercase tracking-wider text-gray-400">
+                            Personality
+                        </dt>
+                        <dd class="mt-1 font-semibold text-gray-700">
+                            Thoughtful, curious, and good listener
+                        </dd>
+                    </div>
+                </dl>
+
+                <div class="mt-3 rounded-2xl border border-primary/10 bg-primary/5 p-4">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-primary">
+                        Favorite Conversation
+                    </p>
+                    <p class="mt-1 text-sm leading-relaxed text-gray-600">
+                        Meaningful conversations, thoughtful discussions,
+                        and deep talks.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div
+                class="rounded-3xl border border-gray-100 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-7">
+                <div class="mb-6 flex items-center gap-3">
+                    <div class="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 14l9-5-9-5-9 5 9 5zm0 0v6m-6-8.5V16c0 1.5 2.7 3 6 3s6-1.5 6-3v-4.5" />
+                        </svg>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold text-dark">
+                            Education
+                        </h3>
+                        <p class="text-sm text-gray-500">
+                            Academic background
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative border-l-2 border-primary/20 pl-5">
+                    <div class="absolute -left-[7px] top-1 h-3 w-3 rounded-full bg-primary ring-4 ring-primary/10">
+                    </div>
+
+                    <span class="inline-flex rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                        July 2022 - August 2026
+                    </span>
+
+                    <h4 class="mt-3 text-lg font-bold text-gray-800">
+                        Diploma IV - Informatics Engineering
+                    </h4>
+
+                    <p class="mt-1 font-medium text-gray-600">
+                        Politeknik Negeri Jakarta
+                    </p>
+
+                    <p class="mt-3 text-sm leading-relaxed text-gray-500">
+                        Focused on mobile development, software engineering,
+                        application architecture, and the development of
+                        technology-based solutions.
+                    </p>
+
+
+                </div>
+
+                <div class="my-5 h-px bg-gray-100"></div>
+                <div>
+                    <p class="mb-2 text-xs font-semibold uppercase tracking-wider text-gray-400">
+                        Activities & Involvement
+                    </p>
+
+                    <p class="text-sm leading-relaxed text-gray-600">
+                        Participated in technology communities, collaborative
+                        projects, organizational activities, and software
+                        development programs.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Work Experience -->
+            <div
+                class="rounded-3xl border border-gray-100 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-7">
+
+                <!-- Card Header -->
+                <div class="mb-7 flex items-center gap-3">
+                    <div
+                        class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 6V4a2 2 0 012-2h2a2 2 0 012 2v2m4 4v9a2 2 0 01-2 2H5a2 2 0 01-2-2v-9m16 0H3m6 4h6" />
+                        </svg>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold text-dark">
+                            Work & Training Experience
+                        </h3>
+
+                        <p class="text-sm text-gray-500">
+                            Professional experience and development programs
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline -->
+                <div class="relative ml-1 border-l-2 border-primary/20 pl-6">
+
+                    <!-- Experience 1 -->
+                    <div class="relative pb-10">
+                        <div
+                            class="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full bg-primary ring-4 ring-primary/10">
+                        </div>
+
+                        <time
+                            class="inline-flex rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                            August 2025 – December 2025
+                        </time>
+
+                        <h4 class="mt-3 text-lg font-bold text-gray-800">
+                            Mobile Developer Intern
+                        </h4>
+
+                        <p class="mt-1 font-semibold text-gray-600">
+                            PT Petrolab Services
+                        </p>
+
+                        <p class="mt-3 text-sm leading-6 text-gray-500">
+                            Focused on mobile application development, software engineering,
+                            application architecture, and the development of technology-based
+                            solutions.
+                        </p>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="relative">
+                        <div
+                            class="absolute -left-[31px] top-1.5 h-3 w-3 rounded-full bg-primary ring-4 ring-primary/10">
+                        </div>
+
+                        <time
+                            class="inline-flex rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                            September 2024 – December 2024
+                        </time>
+
+                        <h4 class="mt-3 text-lg font-bold text-gray-800">
+                            Mobile Developer Cohort
+                        </h4>
+
+                        <p class="mt-1 font-semibold text-gray-600">
+                            Bangkit Academy
+                        </p>
+
+                        <p class="mt-3 text-sm leading-6 text-gray-500">
+                            Developed technical skills in Android development using Kotlin
+                            and Jetpack Compose, mobile architecture, API integration,
+                            database integration, and application testing. Additionally,
+                            strengthened collaboration, communication, and problem-solving
+                            skills through team projects and mentorship.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
         </div>
     </section>
 
     <section id="expertise" class="bg-light py-16 md:py-20">
         <div class="container">
             <div class="text-center mb-12 md:mb-16 fade-in-section">
-                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">My Expertise</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">
+                    My Expertise
+                </h2>
+
                 <div class="w-16 h-1 bg-primary mx-auto rounded mb-6 md:mb-8"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">Technologies I work with daily to build
-                    project applications </p>
+
+                <p class="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
+                    Technologies and professional strengths I use to build applications
+                    and collaborate effectively within a team.
+                </p>
             </div>
 
-            <div class="mt-10 grid gap-5 px-4 lg:grid-cols-3">
+            <div class="mt-10 grid gap-5 px-4 md:grid-cols-2 xl:grid-cols-2">
+
+                <!-- Mobile Development -->
                 <article class="feature-card">
                     <div class="feature-icon">
                         <ion-icon name="phone-portrait-outline"></ion-icon>
                     </div>
+
                     <h3 class="feature-title">Mobile App Development</h3>
+
                     <p class="feature-copy">
-                        Android development with Kotlin, plus Flutter for cross-platform mobile apps and fast UI
-                        iteration.
+                        Android development with Kotlin, plus Flutter for cross-platform
+                        mobile applications and efficient UI development.
                     </p>
+
                     <div class="tech-list">
-                        <span class="tech-pill"><span class="tech-mark">K</span>Kotlin</span>
-                        <span class="tech-pill"><span class="tech-mark">F</span>Flutter</span>
-                        <span class="tech-pill"><ion-icon name="logo-android"></ion-icon>Android</span>
-                        <span class="tech-pill"><ion-icon name="logo-firebase"></ion-icon>Firebase</span>
-                        <span class="tech-pill"><ion-icon name="server-outline"></ion-icon>Sembast</span>
+                        <span class="tech-pill">
+                            <span class="tech-mark">K</span>
+                            Kotlin
+                        </span>
+
+                        <span class="tech-pill">
+                            <span class="tech-mark">F</span>
+                            Flutter
+                        </span>
+
+                        <span class="tech-pill">
+                            <ion-icon name="logo-android"></ion-icon>
+                            Android
+                        </span>
+
+                        <span class="tech-pill">
+                            <ion-icon name="logo-firebase"></ion-icon>
+                            Firebase
+                        </span>
+
+                        <span class="tech-pill">
+                            <ion-icon name="server-outline"></ion-icon>
+                            Sembast
+                        </span>
                     </div>
                 </article>
 
+                <!-- Front-End Development -->
                 <article class="feature-card">
                     <div class="feature-icon">
                         <ion-icon name="desktop-outline"></ion-icon>
                     </div>
+
                     <h3 class="feature-title">Front-End Development</h3>
+
                     <p class="feature-copy">
-                        Responsive interfaces with clean visual hierarchy, compact spacing, and modern component
-                        styling.
+                        Responsive interfaces with clear visual hierarchy, consistent
+                        spacing, and modern component styling.
                     </p>
+
                     <div class="tech-list">
-                        <span class="tech-pill"><ion-icon name="logo-html5"></ion-icon>HTML</span>
-                        <span class="tech-pill"><ion-icon name="logo-css3"></ion-icon>CSS</span>
-                        <span class="tech-pill"><span class="tech-mark">TW</span>Tailwind CSS</span>
-                        <span class="tech-pill"><ion-icon name="logo-javascript"></ion-icon>JavaScript</span>
+                        <span class="tech-pill">
+                            <ion-icon name="logo-html5"></ion-icon>
+                            HTML
+                        </span>
+
+                        <span class="tech-pill">
+                            <ion-icon name="logo-css3"></ion-icon>
+                            CSS
+                        </span>
+
+                        <span class="tech-pill">
+                            <span class="tech-mark">TW</span>
+                            Tailwind CSS
+                        </span>
+
+                        <span class="tech-pill">
+                            <ion-icon name="logo-javascript"></ion-icon>
+                            JavaScript
+                        </span>
                     </div>
                 </article>
 
+                <!-- API and Deployment -->
                 <article class="feature-card">
                     <div class="feature-icon">
                         <ion-icon name="git-network-outline"></ion-icon>
                     </div>
+
                     <h3 class="feature-title">API and Deployment</h3>
+
                     <p class="feature-copy">
-                        Connecting mobile apps to APIs, simple backend services, cloud tools, and deployment
-                        platforms.
+                        Integrating mobile applications with REST APIs, backend services,
+                        cloud tools, and deployment platforms.
                     </p>
+
                     <div class="tech-list">
-                        <span class="tech-pill"><ion-icon name="logo-python"></ion-icon>Python</span>
-                        <span class="tech-pill"><span class="tech-mark">Fl</span>Flask</span>
-                        <span class="tech-pill"><ion-icon name="cloud-outline"></ion-icon>Google Cloud</span>
-                        <span class="tech-pill"><ion-icon name="rocket-outline"></ion-icon>Railway</span>
+                        <span class="tech-pill">
+                            <ion-icon name="logo-python"></ion-icon>
+                            Python
+                        </span>
+
+                        <span class="tech-pill">
+                            <span class="tech-mark">Fl</span>
+                            Flask
+                        </span>
+
+                        <span class="tech-pill">
+                            <ion-icon name="cloud-outline"></ion-icon>
+                            Google Cloud
+                        </span>
+
+                        <span class="tech-pill">
+                            <ion-icon name="rocket-outline"></ion-icon>
+                            Railway
+                        </span>
                     </div>
                 </article>
+
+                <!-- Professional Skills -->
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="feature-title">Professional Skills</h3>
+
+                    <p class="feature-copy">
+                        Adaptable and responsible in completing tasks, solving problems,
+                        learning new technologies, and collaborating within a team.
+                    </p>
+
+                    <div class="tech-list">
+                        <span class="tech-pill">
+                            <ion-icon name="repeat-outline"></ion-icon>
+                            Adaptability
+                        </span>
+
+                        <span class="tech-pill">
+                            <ion-icon name="flash-outline"></ion-icon>
+                            Quick Learner
+                        </span>
+
+                        <span class="tech-pill">
+                            <ion-icon name="bulb-outline"></ion-icon>
+                            Problem Solving
+                        </span>
+
+                        <span class="tech-pill">
+                            <ion-icon name="people-circle-outline"></ion-icon>
+                            Team Collaboration
+                        </span>
+
+                        <span class="tech-pill">
+                            <ion-icon name="checkmark-circle-outline"></ion-icon>
+                            Accountability
+                        </span>
+
+                        <span class="tech-pill">
+                            <ion-icon name="chatbubbles-outline"></ion-icon>
+                            Indonesian — Native
+                        </span>
+
+                        <span class="tech-pill">
+                            <ion-icon name="language-outline"></ion-icon>
+                            English — Intermediate
+                        </span>
+                    </div>
+                </article>
+
             </div>
         </div>
     </section>
@@ -198,11 +585,12 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Featured Projects</h2>
                 <div class="w-16 h-1 bg-primary mx-auto rounded mb-6 md:mb-8"></div>
                 <p class="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">Building mobile
-                    applications while enjoying and understanding the problems behind them and continuously learning how to build
+                    applications while enjoying and understanding the problems behind them and continuously learning how
+                    to build
                     better solutions</p>
             </div>
 
-            <div class="mt-10 grid gap-6 px-4 lg:grid-cols-3"> 
+            <div class="mt-10 grid gap-6 px-4 lg:grid-cols-3">
                 <article class="project-card">
                     <a href="https://drive.google.com/file/d/1iLBiW0Io6DQ9fs8ty0hQ3bXiVwwdhyK8/view?usp=sharing"
                         target="_blank" class="project-link" aria-label="Open Sample QR Scan project">
@@ -276,8 +664,7 @@
             </div>
 
             <div class="mt-8 px-4 text-center">
-                <a href="https://github.com/kasanindit"
-                    target="_blank"
+                <a href="https://github.com/kasanindit" target="_blank"
                     class="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-primary transition hover:border-primary hover:bg-sky-50">
                     <ion-icon name="logo-github" class="text-lg"></ion-icon>
                     See more projects
@@ -291,7 +678,8 @@
             <div class="text-center mb-12 md:mb-16 fade-in-section">
                 <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Certifications</h2>
                 <div class="w-16 h-1 bg-primary mx-auto rounded mb-6 md:mb-8"></div>
-                <p class="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">Learning milestones that support my development path</p>
+                <p class="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">Learning milestones that support my
+                    development path</p>
             </div>
 
             <div class="mt-10 grid gap-5 px-4 lg:grid-cols-[1.2fr_0.9fr_0.9fr]">
@@ -305,10 +693,12 @@
                     </div>
                 </article>
                 <article class="certificate-card">
-                    <img src="src/img/image.png" alt="Sertifikat Studi Independen" class="certificate-image">
+                    <img src="src/img/Kasamira Anindita Qairia-Lomba WebDev.jpg"
+                        alt="Sertifikat Penghargaan Peserta Web Development" class="certificate-image">
                     <div class="certificate-body">
-                        <h3 class="font-bold text-slate-950">Studi Independen</h3>
-                        <p class="mt-2 text-sm text-slate-600">Independent study program completion.</p>
+                        <h3 class="font-bold text-slate-950">Sertifikat Penghargaan Peserta Web Development</h3>
+                        <p class="mt-2 text-sm text-slate-600">Web Development, collaboration, and project completion.
+                        </p>
                     </div>
                 </article>
                 <article class="certificate-card">
@@ -394,7 +784,7 @@
                 <p class="text-center text-xs text-slate-400">
                     <!-- Made by <a href="https://www.instagram.com/kasanindit/" target="_blank"
                         class="font-bold text-sky-300">Kasamira Anindita</a> -->
-                        © 2026 Kasamira Aninidta Qairia. All rights reserved.
+                    © 2026 Kasamira Aninidta Qairia. All rights reserved.
                 </p>
             </div>
         </div>
