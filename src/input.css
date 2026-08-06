@@ -73,7 +73,7 @@ html {
 }
 
 .feature-card {
-    @apply rounded-lg border border-slate-200 bg-white p-5 shadow-sm transition duration-300 ease-in-out hover:-translate-y-1 hover:border-sky-200 hover:shadow-xl sm:p-6;
+    @apply rounded-3xl border border-gray-100 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-7;
 }
 
 .feature-icon {
@@ -105,7 +105,7 @@ html {
 }
 
 .project-card {
-    @apply overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition duration-300 ease-in-out hover:-translate-y-1  hover:shadow-xl;
+    @apply overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 ease-in-out hover:-translate-y-1  hover:shadow-xl;
 }
 
 .project-link {
@@ -133,7 +133,7 @@ html {
 }
 
 .certificate-card {
-    @apply overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm transition duration-300 ease-in-out hover:-translate-y-1 hover:border-sky-200 hover:shadow-xl;
+    @apply overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm transition duration-300 ease-in-out hover:-translate-y-1 hover:border-sky-200 hover:shadow-xl;
 }
 
 .certificate-image {
@@ -145,7 +145,7 @@ html {
 }
 
 .contact-link {
-    @apply inline-flex items-center gap-3 rounded-lg border border-white/10 bg-white/95 px-4 py-3 text-sm font-bold text-slate-950 transition hover:bg-sky-50 hover:text-primary;
+    @apply inline-flex items-center gap-3 rounded-xl border border-white/10 bg-white/95 px-4 py-3 text-sm font-bold text-slate-950 transition hover:bg-sky-50 hover:text-primary;
 }
 
 .contact-link ion-icon {

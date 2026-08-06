@@ -18,8 +18,6 @@
         class="fixed top-0 left-0 z-50 flex w-full items-center transition-all duration-300 ease-in-out bg-transparent py-4 text-white">
         <div class="container mx-auto px-4 lg:px-8">
             <div class="relative flex items-center justify-between">
-
-                <!-- Logo (Hanya Teks, Responsif di Mobile & Desktop) -->
                 <a href="#home" class="flex items-center transition-colors duration-300 hover:opacity-80">
                     <span id="logo-text"
                         class="text-2xl font-extrabold tracking-[0.15em] text-primary transition-colors duration-300">KAQ.</span>
@@ -38,7 +36,7 @@
                     <!-- Nav Menu -->
                     <nav id="nav-menu"
                         class="absolute right-0 top-full mt-4 hidden w-full max-w-[250px] rounded-2xl border border-slate-100 bg-white p-5 shadow-2xl transition-all lg:static lg:mt-0 lg:block lg:max-w-full lg:border-0 lg:bg-transparent lg:p-0 lg:shadow-none">
-                        <ul class="flex flex-col gap-4 text-sm font-medium text-slate-700 lg:flex-row lg:items-center lg:gap-8 lg:text-primary/75"
+                        <ul class="flex flex-col gap-4 text-sm font-medium text-slate-700 lg:font-bold lg:flex-row lg:items-center lg:gap-8 lg:text-primary/75"
                             id="nav-links">
                             <li><a href="#home" class="nav-link block lg:hover:text-primary transition-colors">Home</a>
                             </li>
@@ -63,7 +61,19 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center pt-24 pb-12 md:pt-16 md:pb-0">
+    <section id="home"
+        class="relative isolate flex min-h-screen items-center justify-center overflow-hidden bg-white px-4 pb-16 pt-28 sm:px-6 md:pb-20 md:pt-24">
+        <img src="src/img/bg-porto.jpg" alt="Hero Background"
+            class="absolute inset-0 -z-20 h-full w-full object-cover object-center">
+
+        <div class="absolute inset-0 -z-10 bg-white/75" aria-hidden="true"></div>
+
+        <div class="absolute -left-24 top-24 -z-10 h-72 w-72 rounded-full bg-primary/10 blur-3xl" aria-hidden="true">
+        </div>
+
+        <div class="absolute -right-24 bottom-20 -z-10 h-72 w-72 rounded-full bg-primary/10 blur-3xl"
+            aria-hidden="true"></div>
+
         <div class="text-center px-4 fade-in-section">
             <span
                 class="mb-4 inline-block rounded-full bg-primary/65 px-4 py-1.5 text-sm font-semibold text-white backdrop-blur-sm">Mobile
@@ -76,11 +86,11 @@
             </p>
             <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                 <a href="#projects"
-                    class="px-8 py-3 bg-primary text-white rounded-lg font-medium hover:bg-secondary transition-colors shadow-lg hover:shadow-xl">
+                    class="px-8 py-3 bg-primary text-white rounded-xl font-medium hover:bg-secondary transition-colors shadow-lg hover:shadow-xl">
                     View My Projects
                 </a>
                 <a href="#contact"
-                    class="px-8 py-3 bg-white text-primary border border-primary rounded-lg font-medium hover:bg-gray-50 transition-colors">
+                    class="px-8 py-3 bg-white text-primary border border-primary rounded-xl font-medium hover:bg-gray-50 transition-colors">
                     Reach Me Out
                 </a>
                 <!-- <a href="#contact" target="_blank"
@@ -158,7 +168,7 @@
                         </p>
 
                         <div class="mt-7 flex flex-col gap-3 sm:flex-row">
-                            <a href="src/pdf/Kasamira Anindita Qairia_CV ATS_Mobile Developer - Copy.pdf"
+                            <a href="src/pdf/Kasamira Anindita Qairia_CV ATS_Mobile Developer_technically.pdf"
                                 target="_blank"
                                 class="inline-flex items-center justify-center rounded-xl border border-primary px-5 py-3 font-semibold text-primary transition duration-300 hover:-translate-y-0.5 hover:bg-primary hover:text-white">
                                 View Resume
@@ -176,7 +186,7 @@
         </div>
 
         <!-- Detail cards -->
-        <div class="mx-auto max-w-7xl grid grid-cols-1 gap-6 md:grid-cols-2 sm:px-6 mt-12">
+        <div class="mx-auto max-w-7xl grid grid-cols-1 gap-6 px-6 md:grid-cols-2 sm:px-6 mt-12">
             <div
                 class="rounded-3xl border border-gray-100 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-7">
                 <div class="mb-6 flex items-center gap-3">
@@ -306,6 +316,89 @@
                 </div>
             </div>
 
+            <!-- Organization and Comittee -->
+            <div
+                class="rounded-3xl border border-gray-100 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-7">
+                <!-- Card Header -->
+                <div class="mb-6 flex items-center gap-3">
+                    <div
+                        class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H2v-2a4 4 0 014-4h3m6-4a4 4 0 10-8 0 4 4 0 008 0zm6 1a3 3 0 10-3-3" />
+                        </svg> </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-dark"> Activities &amp; Involvement </h3>
+                        <p class="text-sm text-gray-500"> Organizational and committee experience </p>
+                    </div>
+                </div> <!-- Activity List -->
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2"> <!-- Computer Science Club -->
+                    <article
+                        class="group rounded-2xl border border-gray-100 bg-gray-50/70 p-5 transition duration-300 hover:border-primary/20 hover:bg-primary/5">
+                        <div class="mb-3 flex items-start justify-between gap-3">
+                            <div
+                                class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                                <ion-icon name="laptop-outline"></ion-icon> </div> <span
+                                class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-primary shadow-sm">
+                                2022 – 2024 </span>
+                        </div>
+                        <h4 class="text-base font-bold leading-snug text-gray-800"> Computer Science Club </h4>
+                        <p class="mt-1 text-xs font-semibold uppercase tracking-wider text-primary"> Organization </p>
+                        <p class="mt-3 text-sm leading-relaxed text-gray-500"> Participated in collaborative activities
+                            and programs related to technology, computing, and student skill development. </p>
+                    </article> 
+                    <!-- Sahabat PNJ -->
+                    <article
+                        class="group rounded-2xl border border-gray-100 bg-gray-50/70 p-5 transition duration-300 hover:border-primary/20 hover:bg-primary/5">
+                        <div class="mb-3 flex items-start justify-between gap-3">
+                            <div
+                                class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                                <ion-icon name="brush-outline"></ion-icon> </div> <span
+                                class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-primary shadow-sm">
+                                2024 – 2025 </span>
+                        </div>
+                        <h4 class="text-base font-bold leading-snug text-gray-800"> Sahabat PNJ </h4>
+                        <p class="mt-1 text-xs font-semibold uppercase tracking-wider text-primary"> Organization </p>
+                        <p class="mt-3 text-sm leading-relaxed text-gray-500"> Contributed to student activities while
+                            building communication, teamwork, and interpersonal skills. </p>
+                    </article> 
+                    <!-- P2MD -->
+                    <article
+                        class="group rounded-2xl border border-gray-100 bg-gray-50/70 p-5 transition duration-300 hover:border-primary/20 hover:bg-primary/5">
+                        <div class="mb-3 flex items-start justify-between gap-3">
+                            <div
+                                class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                                <ion-icon name="compass-outline"></ion-icon> </div> <span
+                                class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-primary shadow-sm">
+                                2023 </span>
+                        </div>
+                        <h4 class="text-base font-bold leading-snug text-gray-800"> P2MD </h4>
+                        <p class="mt-1 text-xs font-semibold uppercase tracking-wider text-primary"> Talent Event Committee </p>
+                        <p class="mt-3 text-sm leading-relaxed text-gray-500"> Supported the preparation and
+                            coordination of talent-related activities as part of the event committee and coordination of
+                            talent-related activities as part of the event committee. </p>
+                    </article> 
+                    <!-- TIKGAMES -->
+                    <article
+                        class="group rounded-2xl border border-gray-100 bg-gray-50/70 p-5 transition duration-300 hover:border-primary/20 hover:bg-primary/5">
+                        <div class="mb-3 flex items-start justify-between gap-3">
+                            <div
+                                class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                                <ion-icon name="basketball-outline"></ion-icon> </div> <span
+                                class="rounded-full bg-white px-3 py-1 text-xs font-semibold text-primary shadow-sm">
+                                2024 </span>
+                        </div>
+                        <h4 class="text-base font-bold leading-snug text-gray-800"> TIKGAMES 3×3 Basketball </h4>
+                        <p class="mt-1 text-xs font-semibold uppercase tracking-wider text-primary"> Senior Division
+                        </p>
+                        <p class="mt-3 text-sm leading-relaxed text-gray-500"> Assisted in coordinating basketball
+                            competition activities and supporting the event's operational preparation. </p>
+                    </article>
+                </div>
+            </div>
+
+
+
             <!-- Work Experience -->
             <div
                 class="rounded-3xl border border-gray-100 bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-7">
@@ -409,7 +502,7 @@
                 </p>
             </div>
 
-            <div class="mt-10 grid gap-5 px-4 md:grid-cols-2 xl:grid-cols-2">
+            <div class="mt-10 grid gap-5 px-2 md:grid-cols-2 xl:grid-cols-2">
 
                 <!-- Mobile Development -->
                 <article class="feature-card">
@@ -426,8 +519,18 @@
 
                     <div class="tech-list">
                         <span class="tech-pill">
+                            <ion-icon name="logo-android"></ion-icon>
+                            Android
+                        </span>
+
+                        <span class="tech-pill">
                             <span class="tech-mark">K</span>
                             Kotlin
+                        </span>
+
+                        <span class="tech-pill">
+                            <ion-icon name="rocket-outline"></ion-icon>
+                            Jetpack Compose
                         </span>
 
                         <span class="tech-pill">
@@ -436,8 +539,8 @@
                         </span>
 
                         <span class="tech-pill">
-                            <ion-icon name="logo-android"></ion-icon>
-                            Android
+                            <span class="tech-mark">D</span>
+                            Dart
                         </span>
 
                         <span class="tech-pill">
@@ -458,22 +561,19 @@
                         <ion-icon name="desktop-outline"></ion-icon>
                     </div>
 
-                    <h3 class="feature-title">Front-End Development</h3>
+                    <h3 class="feature-title">Software Development</h3>
 
                     <p class="feature-copy">
                         Responsive interfaces with clear visual hierarchy, consistent
-                        spacing, and modern component styling.
+                        spacing, and modern component styling. Also integrating applications with REST APIs, backend
+                        services,
+                        cloud tools, and deployment platforms.
                     </p>
 
                     <div class="tech-list">
                         <span class="tech-pill">
                             <ion-icon name="logo-html5"></ion-icon>
                             HTML
-                        </span>
-
-                        <span class="tech-pill">
-                            <ion-icon name="logo-css3"></ion-icon>
-                            CSS
                         </span>
 
                         <span class="tech-pill">
@@ -485,26 +585,15 @@
                             <ion-icon name="logo-javascript"></ion-icon>
                             JavaScript
                         </span>
-                    </div>
-                </article>
 
-                <!-- API and Deployment -->
-                <article class="feature-card">
-                    <div class="feature-icon">
-                        <ion-icon name="git-network-outline"></ion-icon>
-                    </div>
-
-                    <h3 class="feature-title">API and Deployment</h3>
-
-                    <p class="feature-copy">
-                        Integrating mobile applications with REST APIs, backend services,
-                        cloud tools, and deployment platforms.
-                    </p>
-
-                    <div class="tech-list">
                         <span class="tech-pill">
                             <ion-icon name="logo-python"></ion-icon>
                             Python
+                        </span>
+
+                        <span class="tech-pill">
+                            <ion-icon name="logo-laravel"></ion-icon>
+                            Laravel
                         </span>
 
                         <span class="tech-pill">
@@ -520,6 +609,62 @@
                         <span class="tech-pill">
                             <ion-icon name="rocket-outline"></ion-icon>
                             Railway
+                        </span>
+
+                        <span class="tech-pill">
+                            <ion-icon name="logo-docker"></ion-icon>
+                            Docker
+                        </span>
+                    </div>
+                </article>
+
+                <!-- Tools -->
+                <article class="feature-card">
+                    <div class="feature-icon">
+                        <ion-icon name="git-network-outline"></ion-icon>
+                    </div>
+
+                    <h3 class="feature-title">Tools</h3>
+
+                    <p class="feature-copy">
+                        Tools for version control, collaboration, and project management to streamline development
+                        processes and enhance team productivity.
+                    </p>
+
+                    <div class="tech-list">
+                        <span class="tech-pill">
+                            <ion-icon name="logo-github"></ion-icon>
+                            Github
+                        </span>
+
+                        <span class="tech-pill">
+                            <ion-icon name="logo-gitlab"></ion-icon>
+                            Gitlab
+                        </span>
+
+                        <span class="tech-pill">
+                            <ion-icon name="logo-android"></ion-icon>
+                            Android Studio
+                        </span>
+
+                        <span class="tech-pill">
+                            <span class="tech-mark">VSC</span>
+                            Visual Studio Code
+                        </span>
+
+                        <span class="tech-pill">
+                            <ion-icon name="logo-figma"></ion-icon>
+                            Figma
+                        </span>
+
+                        <span class="tech-pill">
+                            <span class="tech-mark">P</span>
+                            Postman
+                        </span>
+
+                        <span class="tech-pill">
+                            <ion-icon name="diamond-outline"></ion-icon>
+                            Obsidian
                         </span>
                     </div>
                 </article>
@@ -590,7 +735,7 @@
                     better solutions</p>
             </div>
 
-            <div class="mt-10 grid gap-6 px-4 lg:grid-cols-3">
+            <div class="mt-10 grid gap-6 px-2 lg:grid-cols-3">
                 <article class="project-card">
                     <a href="https://drive.google.com/file/d/1iLBiW0Io6DQ9fs8ty0hQ3bXiVwwdhyK8/view?usp=sharing"
                         target="_blank" class="project-link" aria-label="Open Sample QR Scan project">
@@ -606,9 +751,11 @@
                                 local storage, and API integration to reduce manual data entry.
                             </p>
                             <div class="project-tags">
-                                <span class="tech-pill"><span class="tech-mark">F</span>Flutter</span>
                                 <span class="tech-pill"><ion-icon name="logo-android"></ion-icon>Android</span>
+                                <span class="tech-pill"><span class="tech-mark">F</span>Flutter</span>
+                                <span class="tech-pill"><span class="tech-mark">D</span>Dart</span>
                                 <span class="tech-pill"><ion-icon name="qr-code-outline"></ion-icon>QR Scan</span>
+                                <span class="tech-pill"><ion-icon name="server-outline"></ion-icon>Sembast</span>
                                 <span class="tech-pill"><ion-icon name="server-outline"></ion-icon>API</span>
                             </div>
                         </div>
@@ -665,7 +812,7 @@
 
             <div class="mt-8 px-4 text-center">
                 <a href="https://github.com/kasanindit" target="_blank"
-                    class="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-primary transition hover:border-primary hover:bg-sky-50">
+                    class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-primary transition hover:border-primary hover:bg-sky-50">
                     <ion-icon name="logo-github" class="text-lg"></ion-icon>
                     See more projects
                 </a>
@@ -680,9 +827,10 @@
                 <div class="w-16 h-1 bg-primary mx-auto rounded mb-6 md:mb-8"></div>
                 <p class="text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">Learning milestones that support my
                     development path</p>
-            </div>
-
+                </div>
+                
             <div class="mt-10 grid gap-5 px-4 lg:grid-cols-[1.2fr_0.9fr_0.9fr]">
+
                 <article class="certificate-card">
                     <img src="src/img/bangkit_certificate.png" alt="Bangkit Academy Certificate of Completion"
                         class="certificate-image">
@@ -692,15 +840,35 @@
                             learning experience.</p>
                     </div>
                 </article>
+
                 <article class="certificate-card">
                     <img src="src/img/Kasamira Anindita Qairia-Lomba WebDev.jpg"
                         alt="Sertifikat Penghargaan Peserta Web Development" class="certificate-image">
                     <div class="certificate-body">
-                        <h3 class="font-bold text-slate-950">Sertifikat Penghargaan Peserta Web Development</h3>
+                        <h3 class="font-bold text-slate-950">Certificate of appreciation as a Web Development Competition Participant</h3>
                         <p class="mt-2 text-sm text-slate-600">Web Development, collaboration, and project completion.
                         </p>
                     </div>
                 </article>
+
+                <article class="certificate-card">
+                    <img src="src/img/KAQ_PANITIA TIKGAMES 2024.jpg" alt="Senior Committee TIKGAMES 2024"
+                        class="certificate-image">
+                    <div class="certificate-body">
+                        <h3 class="font-bold text-slate-950">Senior Committee TIKGAMES 2024</h3>
+                        <p class="mt-2 text-sm text-slate-600">Communication, organization, and event management experience.</p>
+                    </div>
+                </article>
+
+                <article class="certificate-card">
+                    <img src="src/img/Sertifikat Kompetensi CADS.jpg" alt="Sertifikat Computer Science Club"
+                        class="certificate-image">
+                    <div class="certificate-body">
+                        <h3 class="font-bold text-slate-950">Certificate of Competence as Associate Data Scientist (BNSP)</h3>
+                        <p class="mt-2 text-sm text-slate-600">Data analysis, data preprocessing, EDA, data management, and RapidMiner. </p>
+                    </div>
+                </article>
+
                 <article class="certificate-card">
                     <img src="src/img/Kasamira Anindita Qairia_CSC_.jpg" alt="Sertifikat Computer Science Club"
                         class="certificate-image">
@@ -709,12 +877,21 @@
                         <p class="mt-2 text-sm text-slate-600">Community and computer science activity milestone.</p>
                     </div>
                 </article>
+
+                <article class="certificate-card">
+                    <img src="src/img/Sertifikat Juara 2 TIKGAMES 2026_pages-to-jpg-0001.jpg" alt="Juara 2 Badminton Tunggal TIKGAMES 2026 "
+                        class="certificate-image">
+                    <div class="certificate-body">
+                        <h3 class="font-bold text-slate-950">2nd Place in Badminton Singles Tournament TIKGAMES 2026</h3>
+                        <p class="mt-2 text-sm text-slate-600">Sports, badminton, fun, competitive.</p>
+                    </div>
+                </article>
             </div>
 
             <div class="mt-8 px-4 text-center">
                 <a href="https://www.linkedin.com/in/kasamira-anindita-qairia-9aa88524b/details/certifications/"
                     target="_blank"
-                    class="inline-flex items-center justify-center gap-2 rounded-lg border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-primary transition hover:border-primary hover:bg-sky-50">
+                    class="inline-flex items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-bold text-primary transition hover:border-primary hover:bg-sky-50">
                     <ion-icon name="logo-linkedin" class="text-lg"></ion-icon>
                     See more certifications
                 </a>
@@ -736,7 +913,7 @@
                         experiences with a thoughtful team.
                     </p>
                 </div>
-                <div class="flex flex-col justify-center gap-3 bg-sky-950/45 p-6 sm:p-8 lg:p-10">
+                <div class="flex flex-col justify-center gap-3 bg-sky-950/45 p-6 sm:p-8 lg:p-10 rounded-lg">
                     <a href="mailto:kasamiraaninditaqairia@gmail.com" class="contact-link">
                         <ion-icon name="mail-outline"></ion-icon>
                         <span>Email</span>

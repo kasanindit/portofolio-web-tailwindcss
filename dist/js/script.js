@@ -15,11 +15,11 @@ window.addEventListener('scroll', () => {
         header.classList.add('text-slate-800'); // Changes hamburger color via currentColor
 
         // Change Logo Text Color
-        logoText.classList.remove('text-primary');
-        logoText.classList.add('text-slate-800');
+        logoText.classList.remove('text-slate-800');
+        logoText.classList.add('text-primary');
 
         hamburger.classList.remove('text-primary');
-        hamburger.classList.add('text-slate-800');
+        hamburger.classList.add('text-primary');
 
         // Change Desktop Nav Links Color
         navLinksGroup.classList.remove('lg:text-primary/90');
